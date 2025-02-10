@@ -120,3 +120,16 @@ rm -rf .git
 git init
 git remote add origin https://github.com/Rupika-08/worldcup-database.git
 git add .
+git commit -m "Reinitializing repo"
+git push -u origin main
+echo "test" > test.txt
+git add test.txt
+git commit -m "Testing push"
+git push origin main
+git remote remove origin
+git remote add origin https://github.com/Rupika-08/worldcup-database.git
+git remote -v
+git fsck --ful
+git fetch origin
+git status
+git add .
